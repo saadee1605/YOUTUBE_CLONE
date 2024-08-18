@@ -12,7 +12,7 @@ const Navbar = (props) => {
    
     return (
         <div className='navbar'>
-            <div className="navbar-right">
+            <div className="navbar-right">kkk
                 <img onClick={props.setNav} className='navbar-right-menu' src={menu} alt="" />
                <Link to='/'><img className='navbar-right-logo' src={youtube_logo} alt="" /></Link>
             </div>

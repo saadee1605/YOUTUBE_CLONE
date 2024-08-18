@@ -1,0 +1,60 @@
+.recommend-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 15px;
+
+}
+.qwe{
+    color: black;
+    text-decoration: none;
+    border: 2px solid red;
+}
+.recommend{
+    height: 100vh;
+    overflow-y: auto;
+}
+.rec-img-card img {
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.rec-card-det {
+    /* border: 2px solid peru; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Aligns items to the top */
+    padding: 0;
+    /* Ensure no padding is causing space at the top */
+}
+
+.rec-card-det h3 {
+    /* border: 2px solid black; */
+    margin-top: 0px;
+}
+
+.rec-card-det div {
+    margin-top: -20px;
+    /* border: 2px solid black; */
+}
+.inner-card-det{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:680px)
+{
+    .recommend-card{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        margin-bottom: 4px;
+    }
+    .rec-card-det h3{
+        font-size: 19px;
+    }
+
+.inner-card-det p{
+margin-top: 0px;}
+
+
+}

@@ -1,0 +1,137 @@
+.sidebar {
+    /* border: 2px solid red; */
+    height: 100vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    /* Ensure that children stack vertically */
+}
+
+.sidebar-content {
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    width: auto;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: all 0.1s;
+    margin-left: 10px;
+
+}
+
+.sidebar-content span {
+    margin: auto 0px;
+    /* display: none; */
+}
+
+.sid-con-img {
+    width: 40px;
+    margin: auto 6px;
+    cursor: pointer;
+}
+
+.sidebar-hr {
+    width: 80%;
+    margin: auto;
+    /* background-origin: 2px solid black; */
+    margin: 20px auto;
+}
+
+.bottom-h3 {
+    text-align: center;
+}
+
+.dontshow span {
+    display: none;
+
+}
+
+.dontshow img {
+    margin-left: 15px;
+
+}
+
+.dontshow h3 {
+    margin-left: 10px;
+    text-align: start;
+}
+
+.dontshow hr {
+    display: none;
+}
+
+.dontshow h3 {
+    display: none;
+}
+
+.sidebar-active {
+    border-bottom: 1px solid black;
+    transform: scale(1.1);
+
+}
+
+.dontshow .sidebar-active {
+    border-bottom: none
+}
+
+.dontshow .sidebar-active img {
+    border-bottom: 1px solid black;
+}
+
+@media(max-width:680px) {
+    .sidebar {
+        z-index: 2;
+        height: 100vh;
+        overflow-y: auto;
+        /* border: 2px solid black; */
+    }
+
+    .sidebar-top {
+        width: 100%;
+        /* border: 2px solid black; */
+        /* overflow-x: hidden; */
+    }
+
+    .sidebar-content {
+        height: 6vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: auto;
+        margin-bottom: 3px;
+        cursor: pointer;
+        transition: all 0.1s;
+        margin-left: 2px;
+        width: 100%;
+        /* border: 1px solid red; */
+
+    }
+
+    .sidebar-content span {
+        margin: auto 0px;
+        font-size: 16px;
+        /* display: none; */
+    }
+
+    .sid-con-img {
+        width: 20px;
+        margin: auto 2px;
+        cursor: pointer;
+    }
+
+    .dontshow img {
+        margin-left: 0px;
+
+    }
+
+    .sidebar-bottom {
+        /* border: 2px solid black; */
+        height: auto;
+    }
+
+    .bottom-h3 {
+        text-align: center;
+        font-size: 18px;
+    }
+}

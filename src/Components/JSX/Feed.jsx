@@ -14,7 +14,7 @@ const Feed = (props) => {
             const jSON_Data = await response.json();
             setOurData(jSON_Data.items); 
         } catch (error) {
-            console.error('Fetch data faailed:', error);
+            console.error('Fetch data failed:', error);
         }
     };
     console.log(1233);
